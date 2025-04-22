@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class idadejava {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		int idades[] = {15, 25, 12, 83, 54, 68, 61, 47, 9, 10};
+		System.out.println("Numero de elemento;" + idades.length);
+	}
+
+}
+ 
+// capacidade de contar elementos 
