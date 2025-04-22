@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Aula22042025 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		Scanner leia = new Scanner(System.in);
+		int senha;
+		int cont=0;
+		
+		do {
+			System.out.println("Digite a Senha: ");
+			senha = leia.nextInt();
+			if(senha != 2025)
+			{
+				System.out.println("ERRO! ACESSO NEGADO!\n");
+				cont++;
+				System.out.println("Erro  nº: " + cont + "vezes!");
+				System.out.printf("Erro  nº: %d vezes!\n", cont);
+				// %d/ %i(inteiro) %s(string) %c(character) %f (float/double);
+				if(cont >= 5)
+				{
+					System.out.printf("voce errou %d vezes!\n", cont);
+					System.out.printf("iniciando a contagem regressiva");
+					for(int i=30; i>=0; i--)
+					{
+						System.out.printf("%d ",i);
+						Thread.sleep(300);
+					}
+					cont=0;
+					System.out.printf("\n");//pule 2 linhas
+					
+			}
+		} 
+			
+		
+		}
+		while(senha != 2025);
+		System.out.println("Parabéns, ACESSO PERMITIDO!");
+		leia.close();
+	}
+
+}
