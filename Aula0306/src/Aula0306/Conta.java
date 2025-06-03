@@ -40,6 +40,12 @@ package Aula0306;
 				return true;			
 			}
 		}
+		public void imprimeDados() {
+			System.out.printf("\n\nDADOS DO CLIENTE %s",this.getNome_Titular());
+			System.out.printf("\nNumero da conta: %d", this.getNumero());
+			System.out.printf("\nSldo: %.2f", this.getSaldo());
+		
+		}
 		public void setNumero(int num) {
 			this.numero = num;
 		}
@@ -51,6 +57,10 @@ package Aula0306;
 		}
 		public String getNome_Titular() {
 			return this.nome_titular;
+			
+		}
+		public double getSaldo() {
+			return saldo;
 		}
 		
 	}
